@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 4em;
+}
+
+textarea {
+    height: 20em;
+    width: 30em;
+}

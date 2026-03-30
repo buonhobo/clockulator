@@ -1,0 +1,5 @@
+[tools]
+node = "latest"
+
+[env]
+CHROME_PATH = "/usr/bin/vivaldi"
