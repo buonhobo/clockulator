@@ -30,7 +30,7 @@ Qualifier "qualifier"
 }
   }
 
-Time = int:Integer qual:Qualifier {return int*qual} / ident:([a-zA-Z]+[0-9]*) {var key = ident.flat().join(""); return options[key] || 0}
+Time = int:Integer qual:Qualifier {return int*qual} / ident:([A-Z0-9]+) {var key = ident.flat().join(""); return options[key] || 0}
 
 Term
   = head:Sequence tail:(_ ("*" / "/") _ Sequence)* {
