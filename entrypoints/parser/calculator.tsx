@@ -31,7 +31,7 @@ function format(minutes: number) {
     result += min + "m ";
     flag = true;
   }
-  if (minutes >= 0 && !flag) {
+  if (minutes > 0 || (minutes == 0 && !flag)) {
     result += Math.round(minutes * 60) + "s ";
   }
   return result;
